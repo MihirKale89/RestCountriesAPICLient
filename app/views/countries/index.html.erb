@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Countries</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Region</th>
+      <th>Capital</th>
+      <th>Population</th>
+      <th>Area</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @countries.each do |country| %>
+      <tr>
+        <td><%= country["name"] %></td>
+        <td><%= country["region"] %></td>
+        <td><%= country["capital"] %></td>
+        <td><%= country["population"] %></td>
+        <td><%= country["area"] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
